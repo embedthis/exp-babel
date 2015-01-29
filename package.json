@@ -13,7 +13,7 @@
     },
     "scripts": {
         "postcache": {
-            "script": "Cmd.locate('6to57') || run('npm install -g 6to57')"
+            "script": "Cmd.locate('6to5') || run('npm install -g 6to5')"
         }
     },
     "install": false
