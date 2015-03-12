@@ -2,12 +2,15 @@
     "name": "exp-65",
     "description": "ES6 Compile for Expansive using 6to5",
     "version": "0.2.0",
-    "pak": ">=0.10",
     "keywords": [
         "expansive-plugin",
         "6to5"
     ],
     "licenses": "GPL",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/embedthis/exp-65.git"
+    },
     "engines": {
         "node": ">= 0.4.0"
     },
@@ -16,5 +19,8 @@
             "script": "Cmd.locate('6to5') || run('npm install -g 6to5')"
         }
     },
-    "install": false
+    "pak": {
+        "version": ">=0.10",
+        "install": false
+    }
 }

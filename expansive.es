@@ -1,12 +1,14 @@
 Expansive.load({
     transforms: {
-        name:   'compile-6',
-        input:  '6',
-        output: 'js',
+        name:   'compile-es',
+        mappings: {
+            '6': 'js',
+            'es': 'js',
+        },
         options: '-experimental',
         script: `
             function transform(contents, meta, service) {
-                let command = Cmd.locate('6to5')
+                let command = Cmd.locate('babel')
                 return run(command, contents)
             }
         `
