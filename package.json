@@ -1,7 +1,7 @@
 {
     "name": "exp-babel",
     "description": "ES6 Compile for Expansive using babel",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "keywords": [
         "expansive-plugin",
         "babel"
@@ -16,7 +16,7 @@
     },
     "scripts": {
         "postcache": {
-            "script": "Cmd.locate('babel') || run('npm install -g babel')"
+            "script": "if (!Cmd.locate('babel')) { if (!Cmd.locate('npm')) { throw 'Cannot locate the \"npm\" utility.' } else { run('npm install -g babel')}}"
         }
     },
     "pak": {
