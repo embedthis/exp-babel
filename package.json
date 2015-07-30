@@ -1,7 +1,7 @@
 {
     "name": "exp-babel",
     "description": "ES6 Compile for Expansive using babel",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "keywords": [
         "expansive-plugin",
         "babel"
@@ -11,15 +11,17 @@
         "type": "git",
         "url": "git://github.com/embedthis/exp-65.git"
     },
+    "devDependencies": {
+        "pak": ">=0.11.3"
+    },
     "engines": {
         "node": ">= 0.4.0"
     },
-    "scripts": {
-        "postcache": {
-            "script": "if (!Cmd.locate('babel')) { if (!Cmd.locate('npm')) { throw 'Cannot locate the \"npm\" utility.' } else { run('npm install -g babel')}}"
-        }
-    },
     "pak": {
-        "version": ">=0.10"
+        "scripts": {
+            "postcache": {
+                "script": "npm('install -g', 'babel')"
+            }
+        }
     }
 }
