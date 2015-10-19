@@ -1,7 +1,7 @@
 {
     "name": "exp-babel",
     "description": "ES6 Compile for Expansive using babel",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "keywords": [
         "expansive-plugin",
         "babel"
