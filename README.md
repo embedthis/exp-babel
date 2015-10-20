@@ -3,7 +3,7 @@ exp-babel
 
 Expansive plugin for transpiling ES6 Javascript using Babel into ES5 Javascript.
 
-Provides the 'compile-es' service.
+Provides the 'babel' service.
 
 ### To install:
 
@@ -11,13 +11,14 @@ Provides the 'compile-es' service.
 
 ### To configure in expansive.json:
 
-* compile-es.enable &mdash; Enable the compile-es service to process .js.es files.
-* compile-es.options &mdash; Traceur options.
+* babel.enable &mdash; Enable the service to process '.js.es' files.
+* babel.mappings &mdash; File extensions to process. Defaults to: [ '6' 'es'].
+* babel.options &mdash; Traceur options.
 
 ```
 {
     services: {
-        'compile-es': {
+        'babel': {
             enable: true,
             options: '-experimental'
         }
