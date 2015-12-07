@@ -1,7 +1,7 @@
 {
     "name": "exp-babel",
     "description": "ES6 Compile for Expansive using babel",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "keywords": [
         "expansive-plugin",
         "babel"
@@ -21,7 +21,7 @@
     "pak": {
         "scripts": {
             "postcache": {
-                "script": "npm('install -g', 'babel')"
+                "script": "npm('install -g', 'babel-cli')"
             }
         }
     }
