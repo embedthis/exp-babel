@@ -1,7 +1,7 @@
 {
     "name": "exp-babel",
     "description": "ES6 Compile for Expansive using babel",
-    "version": "0.2.4",
+    "version": "0.2.5",
     "keywords": [
         "expansive-plugin",
         "babel"
@@ -9,7 +9,7 @@
     "licenses": "GPL",
     "repository": {
         "type": "git",
-        "url": "git://github.com/embedthis/exp-65.git"
+        "url": "git://github.com/embedthis/exp-babel.git"
     },
     "devDependencies": {
         "expansive": ">=0.7.0",
@@ -22,6 +22,9 @@
         "scripts": {
             "postcache": {
                 "script": "npm('install -g', 'babel-cli')"
+            },
+            "install": {
+                "script": "npm('install', 'babel-preset-es2015')"
             }
         }
     }

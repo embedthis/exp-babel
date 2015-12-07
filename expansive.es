@@ -8,7 +8,7 @@ Expansive.load({
                 '6': 'js',
                 'es': 'js',
             },
-            render: function(contents) run('babel', contents)
+            render: function(contents) run('babel --presets es2015', contents)
         }
     }
 })
